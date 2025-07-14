@@ -19,7 +19,7 @@ export function QuestionItem({ question }: QuestionItemProps) {
   return (
     <Card>
       <CardContent>
-        <div className="space-y-4 px-4">
+        <div className="space-y-4 px-6">
           {/* Question */}
           <div className="flex items-start space-x-3">
             <div className="flex-shrink-0">

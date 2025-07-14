@@ -50,7 +50,7 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Fazer uma Pergunta</CardTitle>
+        <CardTitle>Fazer uma pergunta</CardTitle>
         <CardDescription>
           Digite sua pergunta abaixo para receber uma resposta gerada por I.A.
         </CardDescription>
@@ -58,7 +58,7 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
       <CardContent>
         <Form {...form}>
           <form
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-4 px-6"
             onSubmit={form.handleSubmit(handleCreateQuestion)}
           >
             <FormField
@@ -66,7 +66,7 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
               name="question"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Sua Pergunta</FormLabel>
+                  <FormLabel>Sua pergunta</FormLabel>
                   <FormControl>
                     <Textarea
                       className="min-h-[100px]"
